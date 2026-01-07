@@ -6,12 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>SPA PIAC TEST</title>
     <link rel="stylesheet" href="style.css" />
+      <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
   <body>
     <header class="header">
       <ul class="Header-links-ul">
         <li class="header-link" id="about-link">About Me</li>
         <li class="header-link" id="contact-link">Contact</li>
+        <li class="header-link" id="gallery-link">Gallery</li>
       </ul>
       <button id="theme-toggle">Toggle Theme</button>
     </header>
@@ -21,7 +23,22 @@
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry...
       </p>
+  
+
+<!-- secret key = 6Lco_UIsAAAAAL52ytrP6dVsJgVyYi6ChSFhoai- -->
+ <!-- site key = 6Lco_UIsAAAAANtgP8_m02K5bXzVGJuTxuxwFWrq -->
+
     </main>
+    <div class ="cap">
+     <form action="?" method="POST" hidden id="recaptcha">
+      <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+      <br/>
+    </form>
+    </div>
+
+    
+  
     <script src="router.js"></script>
+
   </body>
 </html>
